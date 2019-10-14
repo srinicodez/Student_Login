@@ -27,7 +27,7 @@ namespace Student_Login.Controllers
             login.Username = UserName;
             login.Password = Password;
 
-            if ((login.FirstName).Length != 0)
+            if ((login.FirstName != null))
             {
                 login.saveToDB(login.FirstName, login.LastName, login.Email, login.Username, login.Password);
             }

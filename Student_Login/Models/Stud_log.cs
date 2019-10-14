@@ -43,7 +43,7 @@ namespace Student_Login.Models
         public void saveToDB(string FirstName, string LastName, string Email, string UserName, string Password)
         {
 
-            string cryp_pass = null;
+            string cryp_pass = encryptPass(Password);
 
             cryp_pass = encryptPass(Password);
 
