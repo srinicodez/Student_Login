@@ -15,7 +15,11 @@ namespace Student_Login.Controllers
         public ActionResult NewUser(string FirstName,string LastName,string Email,string UserName,string Password)
         {
 
+            
+
             Stud_log login = new Stud_log();
+
+            
 
             login.FirstName = FirstName;
             login.LastName = LastName;
@@ -23,7 +27,10 @@ namespace Student_Login.Controllers
             login.Username = UserName;
             login.Password = Password;
 
-           
+            if ((login.FirstName).Length != 0)
+            {
+                login.saveToDB(login.FirstName, login.LastName, login.Email, login.Username, login.Password);
+            }
 
 
              return View();
