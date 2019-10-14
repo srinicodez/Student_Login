@@ -1,0 +1,35 @@
+﻿@model Student_Login.Models.Stud_log
+
+@{
+    ViewBag.Title = "NewUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>USER REGISTRATION</h2>
+
+
+
+<form action="NewUser" method="post">
+
+
+    <h2>Student_FirstName :</h2> <input type="text" name="FirstName" style="initial-letter-wrap"/>
+    <br>
+
+    <h2>Student_LastName :</h2> <input type="text" name="LastName" />
+    <br>
+
+    <h2>Email :</h2> <input type="email" name="Email" />
+    <br>
+
+    <h2>UserName :</h2> <input type="text" name="UserName" />
+    <br>
+
+    <h2>Password :</h2> <input type="password" name="Password" />
+    <br>
+
+    <input type="submit" name="Submit" />
+
+
+</form>
+
+
