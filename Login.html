@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewUser - My ASP.NET Application</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/site.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Application name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Home/About">About</a></li>
+                    <li><a href="/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+
+<h2>USER REGISTRATION</h2>
+
+
+
+<form action="NewUser" method="post">
+
+
+    <h2>Student_FirstName :</h2> <input type="text" name="FirstName" style="initial-letter-wrap"/>
+    <br>
+
+    <h2>Student_LastName :</h2> <input type="text" name="LastName" />
+    <br>
+
+    <h2>Email :</h2> <input type="email" name="Email" />
+    <br>
+
+    <h2>UserName :</h2> <input type="text" name="UserName" />
+    <br>
+
+    <h2>Password :</h2> <input type="password" name="Password" />
+    <br>
+
+    <input type="submit" name="Submit" />
+
+
+</form>
+
+
+
+        <hr />
+        <footer>
+            <p>&copy; 2019 - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+
+    
+</body>
+</html>
